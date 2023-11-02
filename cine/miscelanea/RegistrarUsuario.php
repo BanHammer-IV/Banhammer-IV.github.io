@@ -3,12 +3,16 @@
 include("Conexion.php");
 
 $Nombre = $_POST['nombre'];
-$ApellidoP = $_POST['apellido_paterno'];
-$ApellidoM = $_POST['apellido_materno'];
 $Usuario = $_POST['usuario'];
 $Password = $_POST['password'];
 
-mysqli_query($Conexion, "INSERT INTO usuarios(nombre, apellido_paterno, apellido_materno, usuario, pass)
-VALUES ($Nombre, $Apellido', $ApellidoM, $Usuario, $Password)");
+if($Nombre && $Usuario && $Password > 0){
+    $InsertarDatos = "INSERT INTO usuarios(id, nombre, usuario, pass)
+    VALUES ('', '$Nombre', '$Usuario', '$Password')";
+
+    mysqli_query($Conexion, $InsertarDatos);    
+}else{
+    echo 'Llene los campos no sea imbecil';
+}
 
 ?>
