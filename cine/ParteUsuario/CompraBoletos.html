@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../ParteUsuario/Estilos/signin_styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra tus boletos</title>
+</head>
+<body>
+    <!--FORMULARIO DE REGISTRO-->
+    <form action="RegistrarUsuario.php" method="post" class="form">
+        <!--TITULO DEL FORMULARIO-->
+        <h2 class="form_title">Compra tu boleto</h2>
+
+        <!--CONTENEDOR DEL FORMULARIO-->
+        <div class="form_container">
+            <!--DIV DE LA TARJETA-->
+            <div class="form_group">
+                <!--TARJETA-->
+                <input class="form_input" type="text" name="nombre" placeholder=" ">
+                <label class="form_label" for="Nombre">Tarjeta:</label><br>
+                <span class="form_line"></span>
+            </div>    
+    
+            <!--DIV DEL CODIGO-->
+            <div class="form_group">
+                <!--CODIGO-->
+                <input class="form_input" type="password" name="password" placeholder=" " maxlength="3">
+                <label class="form_label" for="Password">Codigo:</label><br>
+                <span class="form_line"></span>
+            </div> 
+    
+            <!--BOTON-->
+            <input type="submit" class="form_submit" value="Comprar Boleto">
+
+        </div>
+    </form>
+</body>
+</html>
