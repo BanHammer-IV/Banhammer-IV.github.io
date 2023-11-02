@@ -3,7 +3,7 @@
 $host = "localhost";
 $user = "root";
 $password = "";
-$db = "proyectocine";
+$db = "Proyecto_Cinemex_TIE";
 
 $Conexion = mysqli_connect($host, $user, $password, $db);
 
