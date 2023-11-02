@@ -3,19 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/Style.css">
     <title>Cinemex</title>
 </head>
 <body>
-    <button> iniciar sesion </button>
-    <button> registrarse </button>
-    <a href="miscelanea/index.html">Index Cinemex</a>
-    <ul>
-        <li>Cartelera</li>
-        <li>Estrenos</li>
-        <li>Salas</li>
-        <li>Nosotros</li>
-    </ul>
-    <img src="images/scale.jpeg " alt="">
-    <script src="index.js"></script>
+    <div class="navbar">
+        <div class="leftSide">
+            <a href="index.html"><img src="images/Logo_de_Cinemex.svg" class="logo"></a>
+            <div class="promocion">Promociones</div>
+            <div class="movies">Peliculas</div>
+            <div class="special">Invitado Especial</div>
+            <div class="more">Mas</div>
+            <div class="location">Locaciones</div>
+        </div>
+        <div class="rigthSide">        
+            <div class="login">Iniciar Sesion</div>
+            <div class="register">
+                <a href="miscelanea/RegistroUsuario.html">
+                    Registrarse
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="cartelera">
+        <div class="special_Function">
+            <img src="cine/ParteUsuario/images/cartelera/pelicula1.jpeg" class="Poster">
+            <img src="cine/ParteUsuario/images/cartelera/kungfupanda.jpg" class="Poster">
+            <img src="cine/ParteUsuario/images/cartelera/DSOD.jpg" class="Poster">
+            <img src="cine/ParteUsuario/images/cartelera/blancanieves.jpg" class="Poster">
+        </div>
+        <div class="peliculas"></div>
+        <div class="promotion"></div>
+    </div>
+
+    <script src="index.js" ></script>
 </body>
 </html>
