@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../Estilos/estilos_empresa/signin_empleados.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registar Empleado</title>
+</head>
+<body>
+    <!--FORMULARIO DE REGISTRO-->
+    <form action="AltaEmpleado.php" method="post" class="form">
+        <!--TITULO DEL FORMULARIO-->
+        <h2 class="form_title">Registrate</h2>
+
+        <!--CONTENEDOR DEL FORMULARIO-->
+        <div class="form_container">
+            <!--DIV DEL NOMBRE-->
+            <div class="form_group">
+                <!--NOMBRE-->
+                <input class="form_input" type="text" name="nombre" placeholder=" ">
+                <label class="form_label" for="Nombre">Nombre:</label><br>
+                <span class="form_line"></span>
+            </div>    
+            
+            <!--DIV DEL USUARIO-->
+            <div class="form_group">
+                <!--USUARIO-->
+                <input class="form_input" type="text" name="usuario" placeholder=" ">
+                <label class="form_label" for="Usuario">Usuario:</label><br>
+                <span class="form_line"></span>
+            </div>
+    
+            <!--DIV DE LA CONTRASEÑA-->
+            <div class="form_group">
+                <!--CONTRASEÑA-->
+                <input class="form_input" type="password" name="password" placeholder=" ">
+                <label class="form_label" for="Password">Contraseña:</label><br>
+                <span class="form_line"></span>
+            </div> 
+
+            <!--DIV DEL PUESTO-->
+            <div class="form_group">
+                <!--PUESTO-->
+                <input class="form_input" type="text" name="puesto" placeholder=" ">
+                <label class="form_label" for="Puesto">Puesto:</label><br>
+                <span class="form_line"></span>
+            </div>
+    
+            <!--BOTON-->
+            <input type="submit" class="form_submit" value="Registrase">
+
+        </div>
+    </form>
+</body>
+</html>
