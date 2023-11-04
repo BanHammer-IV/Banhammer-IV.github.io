@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../images/background.jpg);
+}
+
+div{
+    display: inline-block;
+    margin-left: 2%;
+}
+
+.peliculas{
+    border-radius: 10px;
+    width: 243px;
+    height: 366px;
+    margin-top: 7px;
+}
+
+.header{
+    display: block;
+    border-radius: 11px;
+    background-color: #252932;
+    height: 130px;
+    width: 1300px;
+    text-align: center;
+    margin: auto;
+    margin-top: 8px;
+    margin-bottom: 18px;
+}
+
+.peliculas:hover{
+    transform: translateY(-3%);
+    transition: all 500ms ease;
+}
+
+.titulo{
+    padding-top: 1%;
+    color: #fff;
+    font-size: 450%;
+}
