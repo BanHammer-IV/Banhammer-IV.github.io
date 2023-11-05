@@ -73,7 +73,7 @@
 .container_Special{
     background-color: rgb(201, 22, 22);
     width: 100%;
-    height: max-content;
+    height: 400px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -110,24 +110,17 @@
     height: 400px;
 }
 
-.izquierda{
-    margin-left: 10px;
+
+
+.btnDirection{
     width: 50px;
     height: 50px;
-    background-repeat: no-repeat;
-    background-image: url(../images/arrow_back_ios_FILL0_wght400_GRAD0_opsz24.svg);
-    border-color: transparent;
-
-}
-
-
-.derecha{
-    margin-right: 10px;
-    width: 50px;
-    height: 50px;
-    background-repeat: no-repeat;
-    background-image: url(../images/arrow_forward_ios_FILL0_wght400_GRAD0_opsz24.svg);
-    background-color: transparent;
-    border-color: transparent;
-
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
+    gap: 10px;
 }
