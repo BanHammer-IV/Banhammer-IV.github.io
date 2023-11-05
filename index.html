@@ -11,20 +11,30 @@
     <div class="navbar">
         <div class="leftSide">
             <a href="index.html"><img src="images/Logo_de_Cinemex.svg" class="logo"></a>
-            <div class="promocion">Promociones</div>
-            <div class="movies">Peliculas</div>
             <div class="dropdown">
-              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Invitado especial
-              </button>
+              <a class="btn dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Promociones
+              </a>
+            
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item">¿Que es?</a></li>
-                <li><a class="dropdown-item">¿Como lo consigo?</a></li>
+                <li><a class="dropdown-item" href="#">Combos</a></li>
+                <li><a class="dropdown-item" href="#">Dulceria</a></li>
               </ul>
             </div>
-            <div class="more">Mas</div>
-            <div class="location">Locaciones</div>
-        </div>
+            <div class="movies">Peliculas</div>
+            <div class="special">Invitado especial</div>
+            <div class="dropdown">
+              <a class="btn dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Mas
+              </a>
+            
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Locaciones</a></li>
+                <li><a class="dropdown-item" href="#">Nosotros</a></li>
+                <li><a class="dropdown-item" href="#">El equipo</a></li>
+              </ul>
+            </div>
+          </div>
         <div class="rigthSide">        
             <div class="login">
               <a href="miscelanea/ParteUsuario/InicioSesion.html">Iniciar Sesion</a>
@@ -36,7 +46,7 @@
             </div>
         </div>
     </div>
-
+  </div>
     <div>
       <ol>
         <li><a href="miscelanea/ParteUsuario/PaginaPrincipal.html">Pagina principal usuario</a></li>
@@ -45,35 +55,11 @@
 
     <div class="cartelera">
         <h2>Funciones especiales</h2>
-        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
-            <div class="carousel-inner">
-              <div class="carousel-item active Poster">
-                <img src="images/Five-Nights-at-Freddys-poster-estreno-en-Mexico-jpg.webp" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item Poster">
-                <img src="images/background.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item Poster">
-                <img src="images/YOURNAME_2025x.webp" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        
+        <div class="container_Special"></div>
         <h2>Funciones</h2>
-        <div class="peliculas">
-
-        </div>
+        <div class="peliculas"></div>
         <h2>Promocionales</h2>
-        <div class="promotion">
-        </div>
+        <div class="promotion"></div>
     </div>
 
     <script src="index.js" ></script>
