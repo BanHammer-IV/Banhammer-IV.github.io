@@ -1,0 +1,23 @@
+.occupiedSeat{
+    width: 80px;
+    height: 80px;
+    color: rgb(218, 42, 42);
+}
+
+.availableSeat{
+    width: 80px;
+    height: 80px;
+    color: rgb(82, 82, 82);
+}
+
+.selectedSeat{
+    width: 80px;
+    height: 80px;
+    color: rgb(10, 172, 4);
+}
+
+.wheelchair{
+    width: 80px;
+    height: 80px;
+    color: rgb(42, 98, 218);
+}
