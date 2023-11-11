@@ -1,0 +1,53 @@
+*{
+    font-family: "Lato", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: 
+        linear-gradient(
+            rgba(255, 255, 255, 0.76),
+            rgba(255, 255, 255, 0.76)
+        ), 
+        url(../../images/Cinemex_Logo_Vertical.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1000px;
+
+}
+
+.general{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+}
+
+.title{
+    font-size: xx-large;
+    font-weight: bold;
+    color: #d0033d;
+}
+
+p{
+    font-size: 20px;
+    width: 95%;
+    text-align: justify;
+    color: black;
+}
+
+.logotype{
+    width: 500px;
+    height: 500px;
+}
+
+.Description{
+    margin: 10px;
+}
+
+.text{
+    margin: 30px;
+}
