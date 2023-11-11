@@ -17,37 +17,6 @@
     gap: 10px;
 }
 
-.title{
-    font-size: xx-large;
-    font-weight: bold;
-    color: #d0033d;
-}
-
-p{
-    font-size: 20px;
-    width: 90%;
-    text-align: justify;
-    color: black;
-}
-
-.logotype{
-    width: 500px;
-    height: 500px;
-}
-
-.Description{
-    margin: 40px;
-}
-
-.general{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: stretch;
-}
-
 .logo{
     width: 200px;
     height: 100%;
