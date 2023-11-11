@@ -1,20 +1,51 @@
 *{
+    font-family: "Lato", sans-serif;
     margin: 0px;
     padding: 0px;
 }
 
 .cartelera{
-    background-color: burlywood;
     margin: 20px;
     width: 97%;
     height: 1200px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: start;
     align-content: stretch;
     gap: 10px;
+}
+
+.title{
+    font-size: xx-large;
+    font-weight: bold;
+    color: #d0033d;
+}
+
+p{
+    font-size: 20px;
+    width: 90%;
+    text-align: justify;
+    color: black;
+}
+
+.logotype{
+    width: 500px;
+    height: 500px;
+}
+
+.Description{
+    margin: 40px;
+}
+
+.general{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
 }
 
 .logo{
@@ -36,7 +67,7 @@
     align-items: center;
     align-content: stretch;
     gap: 10px;
-    border-radius: 10px;
+    border-radius: 100px;
 }
 
 .leftSide{
@@ -65,7 +96,6 @@
 }
 
 .container_Special{
-    background-color: rgb(80, 8, 8);
     width: 100%;
     height: 400px;
     display: flex;
@@ -87,7 +117,6 @@
     gap: 10px;
 }
 .peliculas{
-    background-color: rgb(201, 22, 22);
     width: 100%;
     height: 400px;
     display: flex;
@@ -99,7 +128,6 @@
     gap: 10px;
 }
 .promotion{
-    background-color: rgb(201, 22, 22);
     width: 100%;
     height: 400px;
 }
@@ -120,7 +148,7 @@
 .image{
     height: 300px;
     width: 600px;
-    border-radius: 40px; 
+    border-radius: 10px; 
 }
 
 footer{
