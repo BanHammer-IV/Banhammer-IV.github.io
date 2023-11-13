@@ -1,0 +1,41 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+.SeatDescription{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-start;
+    background-color: aquamarine;
+    height: 160px;
+}
+
+.occupied{
+    background-color: rgb(218, 42, 42);
+}
+
+.available{
+    background-color: rgb(82, 82, 82);
+}
+
+.selected{
+    background-color: rgb(10, 172, 4);
+}
+
+.wheelchair{
+    background-color: rgb(42, 98, 218);
+}
+
+.Seat{
+    width: 60px;
+    height: 60px;
+}
+
+.salasPrueba{
+    background-color: blanchedalmond;
+}
