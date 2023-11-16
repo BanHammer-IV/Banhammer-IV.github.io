@@ -6,29 +6,58 @@
     box-sizing: border-box;
 }
 
+.icon_home_menu{
+    padding-left: 17px;
+    padding-top: 10px;
+}
+
+.home_icon{
+    margin-left: 60px;
+    max-width: 90px;
+    margin-top: 30px;
+    display: inline-block;
+    background-color: #af1e1c;
+    border-radius: 100000px;
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 0px 25px -8px;
+}
+
 .div_titulo{
-    max-width: none;
+    display: inline-block;
+    /*max-width: none;
     box-shadow: none;
     margin-top: 7px;
     margin-bottom: 10px;
     height: 130px;
     width: 1300px;
     background-color: #252932;
-    border-radius: 10px;
+    border-radius: 10px;*/
+    box-shadow: 0 0px 25px -3px;
+    border-radius: 100px;
+    background-color: #af1e1c;
+    height: 70px;
+    width: 740px;   
+    margin-left: 180px;
+    margin-bottom: 40px;
+    max-width: none;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
 }
 
 .titulo{
-    margin-top: 1%;
+    padding-top: 7px;
+    margin-top: 2.5px;
     text-align: center;
-    font-size: 450%;
-    color: #fff;
+    font-size: 250%;
+    color: #000;
 }
 
 body{
     background-image: url(../../_Images/images_usuario/background.jpg);
 }
 
-div{
+.div_dulces{
     font-family: 'Roboto', sans-serif;
     padding-top: 7px;
     margin-left: 2%;

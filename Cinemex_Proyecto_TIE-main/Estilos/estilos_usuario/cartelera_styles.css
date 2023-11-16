@@ -24,15 +24,15 @@ div{
 }
 
 .header{
-    box-shadow: 0 0px 25px -8px;
+    box-shadow: 0 0px 25px -3px #000;
     display: block;
     border-radius: 100px;
-    background-color: #fff;
+    background-color: #af1e1c;
     height: 70px;
     width: 500px;
     text-align: center;
     margin: auto;
-    margin-top: 8px;
+    margin-top: 20px;
     margin-bottom: 18px;
 }
 

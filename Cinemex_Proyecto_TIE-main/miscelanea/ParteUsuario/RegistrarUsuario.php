@@ -9,6 +9,10 @@ $Usuario = $_POST['usuario'];
 $Password = $_POST['password']; 
 $Nacimiento = $_POST['nacimiento'];
 
+//RESETEANDO EL ID EN CASO DE QUE SE HAYA ELIMINADO UN USUARIO
+$resetid = "ALTER TABLE usuarios AUTO_INCREMENT = 1";
+mysqli_query($Conexion, $resetid);
+
 //SI EL USUARIO HA LLENADO TODOS LOS CAMPOS DEL FORMULARIO SE INSERTARAN LOS DATOS
 if($Nombre && $Usuario && $Password && $Telefono && $Correo && $Nacimiento > 0){
   
@@ -60,10 +64,6 @@ if($Nombre && $Usuario && $Password && $Telefono && $Correo && $Nacimiento > 0){
 
                 //INSERTANDO LOS DATOS DEL USUARIO EN LA TABLA
                 mysqli_query($Conexion, $InsertarDatos);
-
-                //RESETEANDO EL ID EN CASO DE QUE SE HAYA ELIMINADO UN USUARIO
-                $resetid = "ALTER TABLE usuarios AUTO_INCREMENT = 1";
-                mysqli_query($Conexion, $resetid);
 
             }
 
