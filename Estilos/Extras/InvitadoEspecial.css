@@ -1,0 +1,214 @@
+*{
+    font-family: "Lato", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.selectorBtn{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+}
+
+.eyelash{
+    background-color: transparent;
+    border-color: transparent;
+    width: 170px;
+    height: 40px;
+}
+
+.eyelash:focus{
+    color: #d0033d;
+    border-style: solid;
+    border-bottom: transparent;
+    border-width: 2px;
+    border-color: #d0033d;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 170px;
+    height: 40px;
+}
+
+
+.Presentation{
+    width: 96%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.container{
+    margin: 2%;
+    background-color: antiquewhite;
+}
+
+.separator{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+}
+
+hr{
+    width: 50%;
+}
+
+h1{
+    color: #d0033d;
+}
+/* Apartir de aqui van las clasese de Extra.html */
+    /* clases de "Nuestro programa" */
+.containerProgram{
+    width: 95%;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+}
+
+.textBody{
+    width: 50%;
+    text-align: justify;
+    margin: 50px;
+}
+
+.imageBody{
+    width: 50%;
+}
+
+/* clases de Niveles y Beneficios */
+.containerLevel{
+    width: 80%;
+    margin: 10%;
+}
+
+.btnGroup{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+}
+
+.buttonDesign{
+    font-size: 20px;
+    width: 100px;
+    height: 40px;
+    border-radius: 40px;
+    border-color: transparent;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.322) ;
+    color: #d0033d;
+    background-color: white;
+}
+.buttonDesign:hover{
+    color: #a30230;
+}
+.buttonDesign:focus{
+    background-color: #d0033d;
+    color: white;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+}
+
+.imageCard{
+    width: 20%;
+}
+
+.infoCard{
+    width: 80%;
+}
+
+.level{
+    color:#d0033d;
+}
+
+.levelDescription{
+    text-align: justify;
+}
+
+.advantage{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    gap: 50px;
+}
+
+.advantage img{
+    width: 30%;
+    border-radius: 20px;
+}
+
+/* Puntos */
+.texto{
+    width: 90%;
+    margin-left: 4%;
+}
+
+.textoExtra{
+    font-size: xX-large;
+    color: rgb(44, 44, 44);
+    font-family: "Lato", sans-serif;
+}
+
+.titulo{
+    color: #d0033d;
+    font-size: xx-large;
+}
+
+.containerPoints{
+    margin: 50px;
+    width: 90%;
+}
+
+.textoPuntos{
+    font-size: 25px;
+    text-align: justify;
+}
+
+hr{
+    width: 90%;
+    margin-left: 40px;
+}
+
+/*Promociones*/
+.imagesProm{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+.cartel{
+    width: 250px;
+    margin: 40px;
+    border-radius: 10px;
+}
+
+.btnCartel{
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btnCartel:hover{
+    border-color: #d0033d6e;
+}
