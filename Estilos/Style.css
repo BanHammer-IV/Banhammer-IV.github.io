@@ -178,3 +178,31 @@ footer{
     height: 100%;
     border-radius: 10px;
 }
+
+.specialMovie{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: darkgreen;
+    width: 100%;
+    height: 500px;
+}
+
+.extraMovies{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+}
+
+.movie{
+    width: 250px;
+    height: 300px;
+    margin-right: 5%;
+    background-color: red;
+    border-radius: 10px;
+}
