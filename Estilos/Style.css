@@ -37,6 +37,8 @@
     align-content: stretch;
     gap: 10px;
     border-radius: 100px;
+    position: fixed;
+    word-wrap: break-word;
 }
 
 .leftSide{
@@ -197,12 +199,31 @@ footer{
     justify-content: space-around;
     align-items: center;
     gap: 100px;
+    position: absolute;
+}
+
+.movieSelector{
+    width: 250px;
+    height: 300px;
+    overflow: visible;
+}
+
+.movie-overlay{
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    z-index: 1;
+}
+
+.movie-overlay:hover{
+    background-color: #d0033d49;
+    border-radius: 10px;
 }
 
 .movie{
     width: 250px;
     height: 300px;
-    margin-right: 5%;
-    background-color: red;
     border-radius: 10px;
+    margin-bottom: 3%;
+    overflow: hidden;
 }
