@@ -37,8 +37,6 @@
     align-content: stretch;
     gap: 10px;
     border-radius: 100px;
-    position: fixed;
-    word-wrap: break-word;
 }
 
 .leftSide{
