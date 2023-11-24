@@ -1,0 +1,217 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Lato", sans-serif;
+}
+
+.buyTicketContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    background-color: aqua;
+}
+
+.selectTicket{
+    width: 80%;
+    background-color: rgb(236, 236, 236);
+}
+
+.headTitle{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+}
+
+.return svg{
+    width: 50px;
+    color: rgb(107, 107, 107);
+    margin-right: 10px;
+}
+
+.countTickets{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.structTicket{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 90%;
+    margin-left: 2%;
+    margin-top: 30px;
+}
+
+.infoTicket{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.infoTicket h1{
+    font-size: 60px;
+    font-weight: lighter;
+    color: gray;
+}
+
+.infoTicket h4{
+    font-size: x-large;
+    font-weight: lighter;
+    color: rgb(172, 172, 172);
+}
+
+.infoTicket h5{
+    color: #d0033d;
+    font-size: larger;
+}
+
+.removeControl, .addControl{
+    width: 60px;
+    background-color: white;
+    border-radius: 50%;
+    border-color: transparent;
+    box-shadow: -2px 2px 10px rgb(180, 180, 180);
+}
+
+.movieInformation{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: space-around;
+    background-color: white;
+    width: 35%;
+    height: 522px;
+}
+
+.stepsNumber{
+    text-align: right;
+    color: grey;
+    margin: 10px;
+}
+
+.specialClient{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    align-content: center;
+    margin: 4%;
+}
+
+hr{
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.col1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+.specialClient img{
+    margin-left: 10px;
+}
+
+.specialClient h4{
+    margin-left: 10px;
+    color: #d0033d;
+    font-weight: lighter;
+}
+
+.specialClient li a{
+    background-color: transparent;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.svgShow{
+    color: #d0033d;
+    width: 30px;
+}
+
+.specialClient li a:hover{
+    background-color: #434343;
+}
+
+.specialClient > li{
+    float: left;
+}
+
+.specialClient li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.specialClient li:hover > ul{
+    display: block;
+    float: right;
+    background-color: white;
+    box-shadow: 2px 2px 10px #434343;
+}
+
+.movieInfo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 10%;
+}
+
+.poster{
+    width: 150px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.containerBtn{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerBtn button{
+    width: 300px;
+    height: 50px;
+    border-radius: 50px;
+    border-color: transparent;
+    background-color: #d0033d;
+    color: white;
+    font-size: x-large;
+}
+
+.containerBtn button:hover{
+    background-color: #a5002f;
+    color: rgb(231, 231, 231);
+    box-shadow: -4px 4px 10px grey;
+}
