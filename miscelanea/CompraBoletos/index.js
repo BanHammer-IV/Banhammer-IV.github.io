@@ -12,7 +12,11 @@ redirection.addEventListener("click", ()=>{
 });
 
 selectSeat.addEventListener("click", ()=>{
-    location.href = "seleccionAsientos.html";
+    if( ticket == 0 ){
+        alert("Lo siento, requieres seleccionar minimo un boleto");
+    } else {
+        location.href = "seleccionAsientos.html";
+    }
 });
 
 plusButton.addEventListener("click", ()=>{
@@ -51,4 +55,6 @@ function replaceNumber( cantidad_Ticket ) {
         plusButton.setAttribute("disabled", true);
         numberTicket.innerHTML = cantTicket;
     }
+
+    return cantTicket;
 }
