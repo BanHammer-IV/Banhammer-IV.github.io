@@ -12,27 +12,27 @@
     <div class="buyTicketContainer">
         <div class="selectTicket">
             <div class="headTitle">
-                <div class="return">
+                <button class="return" id="returnPage">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 -960 960 960">
                         <path d="M360-240 120-480l240-240 56 56-144 144h488v-160h80v240H272l144 144-56 56Z"/>
                     </svg>
-                </div>
+                </button>
                 <h1>Selecciona tus boletos</h1>
             </div>
             <div class="countTickets">
                 <!-- Estudiante Confort -->
                 <div class="structTicket">
-                    <button class="removeControl">
+                    <button class="removeControl" id="minusBtnStudent" disabled="true">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 -960 960 960">
                             <path d="M200-440v-80h560v80H200Z"/>
                         </svg>
                     </button>
                     <div class="infoTicket">
-                        <h1>0</h1>
+                        <h1 id="ticketStudent">0</h1>
                         <h4>ESTUDIANTE CONFORT</h4>
                         <h5>$58.00 c/u</h5>
                     </div>
-                    <button class="addControl">
+                    <button class="addControl" id="plusBtnStudent">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 -960 960 960" >
                             <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/>
                         </svg>
@@ -40,17 +40,17 @@
                 </div>
                 <!-- Adulto -->
                 <div class="structTicket">
-                    <button class="removeControl">
+                    <button class="removeControl" id="minusBtn" disabled="true">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 -960 960 960">
                             <path d="M200-440v-80h560v80H200Z"/>
                         </svg>
                     </button>
                     <div class="infoTicket">
-                        <h1>0</h1>
+                        <h1 id="ticketSenior">0</h1>
                         <h4>ADULTO</h4>
                         <h5>$80.00 c/u</h5>
                     </div>
-                    <button class="addControl">
+                    <button class="addControl" id="plusBtn">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 -960 960 960" >
                             <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/>
                         </svg>
@@ -58,17 +58,17 @@
                 </div>
                 <!-- Menor -->
                 <div class="structTicket">
-                    <button class="removeControl">
+                    <button class="removeControl" id="minusBtn" disabled="true">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 -960 960 960">
                             <path d="M200-440v-80h560v80H200Z"/>
                         </svg>
                     </button>
                     <div class="infoTicket">
-                        <h1>0</h1>
+                        <h1 id="ticketChild">0</h1>
                         <h4>MENOR</h4>
                         <h5>$73.00 c/u</h5>
                     </div>
-                    <button class="addControl">
+                    <button class="addControl" id="plusBtn">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 -960 960 960" >
                             <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/>
                         </svg>
@@ -115,11 +115,13 @@
                     </div>
                 </div>
             </div>
+            <div class="totalMoney" id="money"></div>
             <div class="containerBtn">
-                <button>Ir a selección de asientos</button>
+                <button id="selectSeat">Ir a selección de asientos</button>
             </div>
         </div>
     </div>
     <footer></footer>
+    <script src="index.js"></script>
 </body>
 </html>
