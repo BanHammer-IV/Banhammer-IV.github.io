@@ -1,0 +1,15 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Lato", sans-serif;
+}
+
+.prueba1{
+    width: 200px;
+    color: aqua;
+}
+
+.prueba2{
+    width: 200px;
+    color: red;
+}
