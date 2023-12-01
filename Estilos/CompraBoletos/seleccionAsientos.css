@@ -4,12 +4,201 @@
     font-family: "Lato", sans-serif;
 }
 
-.prueba1{
-    width: 200px;
-    color: aqua;
+.selectorSeats{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.prueba2{
-    width: 200px;
-    color: red;
+.sala{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    width: 80%;
+}
+
+.sala li{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    gap: 10px;
+}
+
+.imageprueba{
+    width: 50px;
+}
+
+.descriptionSeat{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: stretch;
+    gap: 10px;
+    background-color: #81818181;
+    margin-bottom: 2%;
+}
+
+.imageIcon{
+    width: 50px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.leyenda{
+    text-align: center;
+}
+
+.movieInformation{
+    width: 40%;
+    background-color: aqua;
+}
+
+.movieInformation{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: space-around;
+    background-color: white;
+    width: 35%;
+    height: 522px;
+}
+
+.stepsNumber{
+    text-align: right;
+    color: grey;
+    margin: 10px;
+}
+
+.specialClient{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    align-content: center;
+    margin: 4%;
+}
+
+hr{
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.col1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+.specialClient img{
+    margin-left: 10px;
+}
+
+.specialClient h4{
+    margin-left: 10px;
+    color: #d0033d;
+    font-weight: lighter;
+}
+
+.specialClient li a{
+    background-color: transparent;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.svgShow{
+    color: #d0033d;
+    width: 30px;
+}
+
+.specialClient li a:hover{
+    background-color: #434343;
+}
+
+.specialClient > li{
+    float: left;
+}
+
+.specialClient li ul{
+    display: none;
+    position: absolute;
+    min-width: 200px;
+}
+
+.specialClient li:hover > ul{
+    display: block;
+    position: fixed;
+    float: inline-start;
+    background-color: white;
+    box-shadow: 2px 2px 10px #434343;
+}
+
+.movieInfo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 10%;
+}
+
+.poster{
+    width: 150px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.containerBtn{
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.totalMoney{
+    color: #d0033d;
+    font-size: x-large;
+    margin-left: 10%;
+    font-weight: bolder;
+}
+
+.containerBtn button{
+    width: 300px;
+    height: 50px;
+    border-radius: 50px;
+    border-color: transparent;
+    background-color: #d0033d;
+    color: white;
+    font-size: x-large;
+}
+
+.containerBtn button:hover{
+    background-color: #a5002f;
+    color: rgb(231, 231, 231);
+    box-shadow: -4px 4px 10px grey;
 }
