@@ -8,11 +8,60 @@
     <title>Cinemex</title>
 </head>
 <body>
-    <div class="prueba1" id="prueba">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 -960 960 960" >
-            <path fill="currentColor" d="M200-120q-17 0-28.5-11.5T160-160v-40q-50 0-85-35t-35-85v-200q0-50 35-85t85-35v-80q0-50 35-85t85-35h400q50 0 85 35t35 85v80q50 0 85 35t35 85v200q0 50-35 85t-85 35v40q0 17-11.5 28.5T760-120q-17 0-28.5-11.5T720-160v-40H240v40q0 17-11.5 28.5T200-120Zm-40-160h640q17 0 28.5-11.5T840-320v-200q0-17-11.5-28.5T800-560q-17 0-28.5 11.5T760-520v160H200v-160q0-17-11.5-28.5T160-560q-17 0-28.5 11.5T120-520v200q0 17 11.5 28.5T160-280Zm120-160h400v-80q0-27 11-49t29-39v-112q0-17-11.5-28.5T680-760H280q-17 0-28.5 11.5T240-720v112q18 17 29 39t11 49v80Zm200 0Zm0 160Zm0-80Z"/>
-        </svg>
+    <div class="descriptionSeat">
+        <div class="container"><img class="imageIcon" src="../../images/seleccionAsientos/AvaiableSeat.svg"><h4 class="leyenda">Asiento disponible</h4></div>
+        <div class="container"><img class="imageIcon" src="../../images/seleccionAsientos/SelectedSeat.svg"><h4 class="leyenda">Asiento Seleccionado</h4></div>
+        <div class="container"><img class="imageIcon" src="../../images/seleccionAsientos/SeatWheel.svg"><h4 class="leyenda">Asiento Especiales</h4></div>
+        <div class="container"><img class="imageIcon" src="../../images/seleccionAsientos/unvailableSeat.svg"><h4 class="leyenda">Asiento Ocupado</h4></div>
     </div>
+    <div class="selectorSeats">
+        <div class="sala" id="salas"></div>
+        <div class="movieInformation">
+            <div class="stepsCount">
+                <div class="stepsNumber"> 1 - 3</div>
+            </div>
+            <hr>
+            <div class="specialClient">
+                <div class="col1">
+                    <img src="https://cinemex.com/dist/images/icon-tickets.png">
+                    <h4>¿Eres Invitado Especial?</h4>    
+                </div>
+                <div>
+                    <li style="list-style: none;">
+                        <div class="svgShow">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 -960 960 960">
+                                <path d="M480-345 240-585l56-56 184 183 184-183 56 56-240 240Z"/>
+                            </svg>
+                        </div>
+                        <ul style="list-style: none;">
+                            <li>¿Qué es Invitado Especial?</li>
+                            <li>Conoce los Beneficios</li>
+                            <li>Ingresar</li>
+                        </ul>
+                    </li>
+                </div>
+            </div>
+            <hr>
+            <div class="movieInfo">
+                <img class="poster" src="../../images/Poster_Peliculas/Avengers_IW.jpeg">
+                <div class="description">
+                    <div class="name">Avengers: Infinity War</div>
+                    <div class="extraInfo">
+                        Barranchos <br>
+                        Jueves 23 de Noviembre <br>
+                        05:45 PM <br>
+                        Sala 3 <br>
+                        Español Tradicional
+                    </div>
+                </div>
+            </div>
+            <div class="totalMoney" id="money"></div>
+            <div class="containerBtn">
+                <button id="selectSeat">Ir a selección de asientos</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
     <script src="seleccionAsientos.js"></script>
 </body>
 </html>
