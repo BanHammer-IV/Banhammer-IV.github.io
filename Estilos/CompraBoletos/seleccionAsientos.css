@@ -34,6 +34,8 @@
 
 .imageprueba{
     width: 50px;
+    background-color: transparent;
+    border-color: transparent;
 }
 
 .descriptionSeat{
@@ -180,14 +182,13 @@ hr{
     align-items: center;
 }
 
-.totalMoney{
+.total{
     color: #d0033d;
-    font-size: x-large;
-    margin-left: 10%;
-    font-weight: bolder;
+    font-size: 20px;
+    font-weight: 550;
 }
 
-.containerBtn button{
+.containerBtn{
     width: 300px;
     height: 50px;
     border-radius: 50px;
@@ -197,7 +198,7 @@ hr{
     font-size: x-large;
 }
 
-.containerBtn button:hover{
+.containerBtn:hover{
     background-color: #a5002f;
     color: rgb(231, 231, 231);
     box-shadow: -4px 4px 10px grey;
