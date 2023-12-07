@@ -1,0 +1,66 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Lato", sans-serif;
+}
+.cardTypePay{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+h3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    color: #d0033d;
+}
+
+.card{
+    width: 200px;
+    background-color: white;
+    border-width: 2px;
+    border-radius: 5%;
+    box-shadow: 4px 4px 10px #797979;
+}
+
+.cardPaypal svg{
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 80%;
+    color: #3b7bbf;
+}
+
+.cardPaypal svg:hover{
+    color: #3a638e;
+}
+
+.cardPaypal hr{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.cardDebit svg{
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 80%;
+    color: rgb(184, 174, 26);
+}
+
+.cardDebit svg:hover{
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 80%;
+    color: rgb(156, 147, 23);
+}
+
+.cardDebit hr{
+    width: 80%;
+    margin-left: 10%;
+}
