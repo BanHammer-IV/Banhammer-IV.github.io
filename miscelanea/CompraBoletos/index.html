@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../images/Logo_de_Cinemex.svg" type="image/x-icon">
     <link rel="stylesheet" href="../../Estilos/CompraBoletos/Style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <title>Cinemex</title>
 </head>
 <body>
@@ -29,7 +31,7 @@
                     </button>
                     <div class="infoTicket">
                         <h1 id="ticketStudent">0</h1>
-                        <h4>ESTUDIANTE CONFORT</h4>
+                        <h4 id="clasName">ESTUDIANTE CONFORT</h4>
                         <h5>$58.00 c/u</h5>
                     </div>
                     <button class="addControl" id="plusBtnStudent">
@@ -69,7 +71,6 @@
                         <h5>$73.00 c/u</h5>
                     </div>
                     <button class="addControl" id="plusBtn">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 -960 960 960" >
                             <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/>
                         </svg>
                     </button>
@@ -115,13 +116,15 @@
                     </div>
                 </div>
             </div>
-            <div class="totalMoney" id="money"></div>
-            <div class="containerBtn">
-                <button id="selectSeat">Ir a selección de asientos</button>
-            </div>
+            <form class="ticketForm" action="seleccionAsientos.html" method="post">
+                <input type="text" readonly class="total" name="dinero" id="money">
+                <input type="text" readonly class="total" name="ticket" id="cantTicket">
+                <input type="submit" id="selectSeat" name="changePage" class="containerBtn" value="Ir a selección de asientos">
+            </form>
         </div>
     </div>
     <footer></footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </body>
 </html>
