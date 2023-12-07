@@ -1,20 +1,23 @@
+let selectSeat = document.getElementById("selectSeat");
 let redirection = document.getElementById("returnPage");
 let plusButton = document.getElementById("plusBtnStudent");
 let minusButton = document.getElementById("minusBtnStudent");
 let numberTicket = document.getElementById("ticketStudent");
-let selectSeat = document.getElementById("selectSeat");
-let divMoney = document.getElementById("money");
+let divMoney =  document.getElementById("money");
+let divTickets = document.getElementById("cantTicket");
 
 let ticket = 0;
-
+let cantTicket, totalTicket, clasificationName;
 redirection.addEventListener("click", ()=>{
     location.href = "../../index.html"
 });
 
 selectSeat.addEventListener("click", ()=>{
-    if( ticket == 0 ){
+    if(ticket == 0){
         alert("Lo siento, requieres seleccionar minimo un boleto");
     } else {
+        let temp =  totalTicket + ", "+ cantTicket + ", "+ clasificationName;
+        localStorage.setItem('myData', temp);
         location.href = "seleccionAsientos.html";
     }
 });
@@ -30,10 +33,9 @@ minusButton.addEventListener("click", ()=>{
 });
 
 function replaceNumber( cantidad_Ticket ) {
-    let cantTicket = cantidad_Ticket;
-    //variable de precio de ticket
-    let price = 58.0;
-    let totalTicket;
+    cantTicket = cantidad_Ticket;
+    let price = 58.0;//variable de precio de ticket
+    clasificationName = document.getElementById("clasName").textContent;
 
     if( cantTicket == 0 ){
         //Si es menor que 0 el numero que se muestra se debe quedar en ese
@@ -46,7 +48,8 @@ function replaceNumber( cantidad_Ticket ) {
         plusButton.removeAttribute("disabled");
         numberTicket.innerHTML = cantTicket;
         totalTicket = price * cantTicket;
-        divMoney.innerHTML = "Total a pagar: " + totalTicket;
+        divMoney.setAttribute("value", "Total a pagar: $" + totalTicket + ".00");
+        divTickets.setAttribute("value", clasificationName+": "+cantTicket);
     }
     
     if( cantTicket == 10 ) {
@@ -55,6 +58,4 @@ function replaceNumber( cantidad_Ticket ) {
         plusButton.setAttribute("disabled", true);
         numberTicket.innerHTML = cantTicket;
     }
-
-    return cantTicket;
 }
