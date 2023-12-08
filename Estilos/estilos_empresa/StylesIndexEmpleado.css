@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    float: left;
+}
+
+.list_users{
+    padding-left: 20px;
+}
+
+body{
+    background-image: url(../../images/images_empresa/background.jpg);
+    background-size: 1363px;
+}
+
+.img_motivacional{
+    height: 300px;
+    width: 500px;
+}
+
+.header{
+    width: 1220px;
+    height: 70px;
+    box-shadow: 0 5px 40px -5px;
+    margin: auto;
+    padding-top: 25px;
+    margin-top: 20px;
+    background-color: #3a425c;
+    border-radius: 100px;
+}

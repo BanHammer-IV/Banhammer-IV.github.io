@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,12 +9,20 @@
     <title>Inicia Sesion</title>
 </head>
 <body>
+    
+    <!-- BOTON DE CERRAR -->
+    <div class="cerrar">
+        <a href="../../index.php">
+            <img src="../../images/Icon/close_button.png" width="60px" height="60px">
+        </a>
+    </div>
+
     <!--FORMULARIO DE INICIO DE SESION-->
     <form class="form" method="post" action="ValidacionInicioSesion.php">
         <!--TITULO DEL FORMULARIO-->
         <h2 class="form_title">Inicia Sesion</h2>
         <!--ENLACE A REGISTRO DE CUENTAS-->
-        <p class="form_paragraph">¿No tienes cuenta? <a href="RegistroUsuario.html" class="form_link">Entra Aqui</a></p>
+        <p class="form_paragraph">¿No tienes cuenta? <a href="RegistroUsuario.php" class="form_link">Entra Aqui</a></p>
         <!--CONTENIDO DEL FORMULARIO-->
         <div class="form_container">
 

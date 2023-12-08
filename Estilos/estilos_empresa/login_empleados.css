@@ -7,7 +7,7 @@
 }
 
 body{
-    background-image: url(../../_Images/images_empresa/background.jpg);
+    background-image: url(../../images/images_empresa/background.jpg);
     background-size: 1363px;
     font-family: 'Roboto', sans-serif;
     /*background-color: #e5e5f7;
@@ -83,6 +83,10 @@ body{
     transition: transform .5s, color, .3s;
 }
 
+.div_close{
+    position: fixed;
+}
+
 .form_submit{
     background: #515d81;
     color: #fff;
@@ -92,6 +96,7 @@ body{
     padding: .8em 0;
     border: none;
     border-radius: .5em;
+    min-width: 300px;
 }
 
 .form_line{

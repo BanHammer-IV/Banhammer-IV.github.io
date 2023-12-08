@@ -7,4 +7,5 @@ $db = "proyecto_tie";
 
 $Conexion = mysqli_connect($host, $user, $password, $db);
 
+
 ?>
