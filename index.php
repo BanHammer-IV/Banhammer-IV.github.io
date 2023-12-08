@@ -1,15 +1,11 @@
 <?php
-
 error_reporting(0);
 session_start();
 $TagUsuario = $_SESSION['usuario'];
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,9 +15,8 @@ $TagUsuario = $_SESSION['usuario'];
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <title>Cinemex</title>
 </head>
-
 <body>
-    <div class="navbar">
+    <div class="nav_bar">
         <div class="leftSide">
             <a href="#"><img src="images/Logo_de_Cinemex_Completo.svg" class="logo"></a>
             &nbsp;
@@ -49,7 +44,6 @@ $TagUsuario = $_SESSION['usuario'];
             </div>
           </div>
         <div class="rigthSide">  
-          <div class="dropdown">
           <!-- TAG DEL USUARIO -->
           <h3 class="nombre_usuario">
             <?php
@@ -60,6 +54,7 @@ $TagUsuario = $_SESSION['usuario'];
             } 
             ?>
           </h3>
+          <div class="dropdown">
             <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               <!--ESTO ES UN ICONO PORQUE NO ME DEJO CAMBIARLE EL COLOR DESDE CSS-->
               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="profile" viewBox="0 0 16 16">
