@@ -90,6 +90,10 @@ function changeColor( imgPro, typeChange ) {
 }
 
 btnChange.addEventListener("click", ()=>{
+    var paginaPago = 'pagar.php';
+
+    window.open(paginaPago, 'GooglePopup', 'width=600,height=800');
+    /*
     console.log( arraySelectedSeat );
     console.log( arraySelectedSeat.length );
     console.log( parseInt( ticket ) );
@@ -97,7 +101,7 @@ btnChange.addEventListener("click", ()=>{
         alert("Necesitas seleccionar tus asientos");
     } else if( arraySelectedSeat.length >= 1 && arraySelectedSeat.length < parseInt( ticket ) ){
         alert("Hacen falta asientos por seleccionar");
-    } else if( arraySelectedSeat.length == parseInt( ticket )){
-        location.href = "pagar.html"
-    }
+    } else {
+        location.href = "pagar.html";
+    }*/
 });
