@@ -12,76 +12,69 @@ textPresentation.appendChild(containerGeneral);
 
 function removedor()
 {
-    //Funcion que borra lo que se esta mostrando
-    //actualmente en la pagina
-    if(("#textPresentation").length)
-    {
-        $(function()
-        {
-            setTimeout(function()
-            {
-                $(containerGeneral).remove();
-            })
-        });
-    }
-
-
+    containerGeneral.innerHTML = '';
 }
 
 system.addEventListener("click", ()=>{
     if (containerGeneral.hasChildNodes()) {
         removedor();   
-    } else {
-        let greet = document.createElement("h4");
-        greet.setAttribute("id", "greeting");
-        greet.innerText = "Estimado Invitado Especial:";
-
-        let quest = document.createElement("h4");
-        quest.setAttribute("id", "questions");
-        quest.innerText = "¿Aún no actualizas tu tarjeta?";
-
-        let text = document.createElement("p");
-        text.setAttribute("id", "texting");
-        text.innerText = "No te preocupes, ven al Centro de " +
-        "Atención al Invitado (CAI) o Descarga nuestra APP para"+
-        " que puedas cambiar tu tarjeta y continúes disfrutando "+
-        "los beneficios de ser Invitado Especial Cinemex.";
-        
-        let quest_1 = document.createElement("h4");
-        quest_1.innerText = "¿Qué esperas?";
-        let text_1 = document.createElement("p");
-        text_1.innerText = "Tienes hasta el 31 de diciembre 2023."+
-        " Gracias por seguir viviendo ¡La Magia del Cine en Cinemex!";
-        
-        containerGeneral.appendChild(greet);
-        containerGeneral.appendChild(quest);
-        containerGeneral.appendChild(text);
-        containerGeneral.appendChild(quest_1);
-        containerGeneral.appendChild(text_1);
-        textPresentation.appendChild(containerGeneral);
     }
+    let divSys = document.createElement("div");
+    let strong = document.createElement( "strong" );
+    let parragraph = document.createElement( "p" );
+    let strongS = document.createElement( "strong" );
+    let parragraphS = document.createElement( "p" );
+    let imageBody = document.createElement( "img" );
+    let title = document.createElement( "h2" );
+
+        divSys.setAttribute("class", "textBody");
+        containerGeneral.classList.add("containerProgram");
+        title.innerHTML = "Estimado Invitado Especial: <br><br>";
+        strong.innerHTML = "¿Aún no actualizas tu tarjeta? <br><br>";
+        parragraph.innerHTML = "No te preocupes, ven al Centro de Atención al Invitado (CAI) o " +
+                        "descarga nuestra APP para que puedas cambiar tu tarjeta y continúes " +
+                        "disfrutando los beneficios de ser Invitado Especial Cinemex. <br><br>";
+        strongS.innerHTML = "¿Qué esperas?<br><br>";
+        parragraphS.innerHTML = "Tienes hasta el 31 de diciembre 2023. " + 
+                        "<strong>Gracias por seguir viviendo ¡La Magia del Cine en Cinemex!</strong>";
+        imageBody.setAttribute("class", "imageBody");
+        imageBody.setAttribute("src", "https://statics.cinemex.com/uploads/cms/attachments/6546a181c4315.jpeg");
+        
+    divSys.appendChild( title );
+    divSys.appendChild( strong );
+    divSys.appendChild( parragraph );
+    divSys.appendChild( strongS );
+    divSys.appendChild( parragraphS );
+    containerGeneral.appendChild( divSys );
+    containerGeneral.appendChild( imageBody );
 });
 
 signup.addEventListener("click", ()=>{
     if(containerGeneral.hasChildNodes()){
         removedor();
-    } else {
-        let greet_S = document.createElement("h4");
-        greet_S.innerText = "Estimado Invitado Especial:";
-    
-        let quest_S = document.createElement("h4");
-        quest_S.innerText = "¿Aún no actualizas tu tarjeta?";
-    
-        let text_S = document.createElement("p");
-        text_S.innerText = "No te preocupes, ven al Centro de " +
-        "Atención al Invitado (CAI) o Descarga nuestra APP para"+
-        " que puedas cambiar tu tarjeta y continúes disfrutando "+
-        "los beneficios de ser Invitado Especial Cinemex.";
-    
-        containerGeneral.appendChild(greet_S);
-        containerGeneral.appendChild(quest_S);
-        containerGeneral.appendChild(text_S);
-        textPresentation.appendChild(containerGeneral);
     }
-    
+});
+
+levels.addEventListener("click", ()=> {
+    if(containerGeneral.hasChildNodes()){
+        removedor();
+    }
+});
+
+points.addEventListener("click", ()=> {
+    if(containerGeneral.hasChildNodes()){
+        removedor();
+    }
+});
+
+promotion.addEventListener("click", ()=> {
+    if(containerGeneral.hasChildNodes()){
+        removedor();
+    }
+});
+
+question.addEventListener("click", ()=> {
+    if(containerGeneral.hasChildNodes()){
+        removedor();
+    }
 });
