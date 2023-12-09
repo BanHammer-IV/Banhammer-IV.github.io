@@ -41,7 +41,6 @@
 
 .container{
     margin: 2%;
-    background-color: antiquewhite;
 }
 
 .separator{
@@ -86,7 +85,8 @@ h1{
 /* clases de Niveles y Beneficios */
 .containerLevel{
     width: 80%;
-    margin: 10%;
+    margin-top: 2%;
+    margin-left: 10%;
 }
 
 .btnGroup{
@@ -96,6 +96,8 @@ h1{
     justify-content: space-around;
     align-items: center;
     align-content: stretch;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .buttonDesign{
@@ -123,6 +125,8 @@ h1{
     justify-content: flex-start;
     align-items: center;
     align-content: stretch;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .imageCard{
@@ -171,11 +175,14 @@ h1{
 .titulo{
     color: #d0033d;
     font-size: xx-large;
+    margin-top: 4%;
+    margin-bottom: 10px;
 }
 
 .containerPoints{
     margin: 50px;
-    width: 90%;
+    margin-left: 10%;
+    width: 80%;
 }
 
 .textoPuntos{
