@@ -97,7 +97,7 @@ $TagUsuario = $_SESSION['usuario'];
       </div>
     </div>
     <div class="cartelera">
-                <div class="specialMovie">
+        <div class="specialMovie">
           <div class="container_Special">
             <div class="containerCarousel">
               <div id="carouselExampleIndicators" class="carousel slide">
