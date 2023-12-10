@@ -6,11 +6,8 @@ let promotion = document.getElementById("Promotion");
 let question = document.getElementById("Question");
 let textPresentation = document.getElementById("textPresentation");
 let containerGeneral = document.createElement("div");
-let prueba = document.getElementById( "prueba" );
-
-prueba.addEventListener("click", ()=>{
-    console.log( containerGeneral.classList );
-});
+let barraA = document.getElementById( "barraA" );
+let barraB = document.getElementById( "barraB" );
 
 containerGeneral.setAttribute("id", "containerGen");
 textPresentation.appendChild(containerGeneral);
@@ -21,17 +18,22 @@ function removedor( actualClass )
     newClass = actualClass;
     
     containerGeneral.innerHTML = '';
-    console.log( newClass );
     
     if( containerGeneral.classList.contains("containerProgram") ){
         containerGeneral.classList.replace( "containerProgram", newClass );
     } else if( containerGeneral.classList.contains("containerLevel") ){
         containerGeneral.classList.replace( "containerLevel", newClass );
+    } else if( containerGeneral.classList.contains("containerPoints") ){
+        containerGeneral.classList.replace( "containerPoints", newClass );
+    } else if( containerGeneral.classList.contains("containerPromotion") ){
+        containerGeneral.classList.replace( "containerPromotion", newClass );
     }
     
 }
 
 system.addEventListener("click", ()=>{
+    barraA.style.width = "3.9%";
+    barraB.style.width = "83.95%";
     let clase = "containerProgram";
     removedor( clase );   
     containerGeneral.classList.add("containerProgram")
@@ -65,12 +67,16 @@ system.addEventListener("click", ()=>{
 });
 
 signup.addEventListener("click", ()=>{
+    barraA.style.width = "19.95%";
+    barraB.style.width = "67.9%";
     if(containerGeneral.hasChildNodes()){
         removedor();
     }
 });
 
 levels.addEventListener("click", ()=> {
+    barraA.style.width = "35.85%";
+    barraB.style.width = "51.8%";
     let clase = "containerLevel";
     removedor( clase );
     containerGeneral.classList.add( "containerLevel" )
@@ -155,9 +161,11 @@ levels.addEventListener("click", ()=> {
 });
 
 points.addEventListener("click", ()=> {
-    let clase = "containerPuntos"
+    barraA.style.width = "51.8%";
+    barraB.style.width = "35.85%";
+    let clase = "containerPoints"
     removedor( clase );
-    containerGeneral.classList.add("containerPoints");
+    containerGeneral.classList.add( clase );
 
     let divText = document.createElement( "div" );
         divText.setAttribute("class", "textoExtra");
@@ -215,13 +223,48 @@ points.addEventListener("click", ()=> {
 });
 
 promotion.addEventListener("click", ()=> {
-    if(containerGeneral.hasChildNodes()){
-        removedor();
-    }
+    barraA.style.width = "67.85%";
+    barraB.style.width = "19.8%";
+    let clase = "containerPromotion"
+    removedor( clase );
+    containerGeneral.classList.add( clase );
+
+    let textPuntos = document.createElement("div");
+        textPuntos.setAttribute("class", "textoPuntos");
+        textPuntos.innerHTML = "Forma parte del mejor programa de recompensas que Premia tu Diversión,"+ 
+        "adquiere tu tarjeta y empieza a disfrutar de las exclusivas promociones.";
+    let imagesProm = document.createElement("div");
+        imagesProm.setAttribute("class", "imagesProm");
+    let btnCartel = document.createElement("div");
+        btnCartel.setAttribute("class", "btnCartel");
+    let cartelA = document.createElement("img");
+        cartelA.setAttribute("class", "cartel");
+        cartelA.setAttribute("src", "https://statics.cinemex.com/uploads/cms/promosie/222-image-v2.jpg");
+    let cartelB = document.createElement("img");
+        cartelB.setAttribute("class", "cartel");
+        cartelB.setAttribute("src", "https://statics.cinemex.com/uploads/cms/promosie/258-image-v2.jpg");
+    let cartelC = document.createElement("img");
+        cartelC.setAttribute("class", "cartel");
+        cartelC.setAttribute("src", "https://statics.cinemex.com/uploads/cms/promosie/273-image-v2.jpg");
+    let cartelD = document.createElement("img");
+        cartelD.setAttribute("class", "cartel");
+        cartelD.setAttribute("src", "https://statics.cinemex.com/uploads/cms/promosie/274-image-v2.jpg");
+
+    btnCartel.appendChild( cartelA );
+    btnCartel.appendChild( cartelB );
+    btnCartel.appendChild( cartelC );
+    btnCartel.appendChild( cartelD );
+    imagesProm.appendChild( btnCartel );
+    containerGeneral.appendChild( textPuntos );
+    containerGeneral.appendChild( imagesProm );
+
 });
 
 question.addEventListener("click", ()=> {
+    barraA.style.width = "83.95%";
+    barraB.style.width = "3.9%";
     if(containerGeneral.hasChildNodes()){
         removedor();
     }
+    
 });
