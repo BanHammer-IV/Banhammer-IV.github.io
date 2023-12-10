@@ -47,13 +47,16 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    align-content: stretch;
 }
 
-hr{
-    width: 50%;
+.barra{
+    border-style: solid;
+    border-color: #d0033d;;
+    border-bottom: transparent;
+    border-right: transparent;
+    border-left: transparent;
 }
 
 h1{
@@ -196,6 +199,12 @@ hr{
 }
 
 /*Promociones*/
+.containerPromotion{
+    margin: 50px;
+    margin-left: 10%;
+    width: 80%;
+}
+
 .imagesProm{
     display: flex;
     flex-direction: row;
@@ -211,11 +220,7 @@ hr{
     border-radius: 10px;
 }
 
-.btnCartel{
-    background-color: transparent;
-    border-color: transparent;
-}
-
-.btnCartel:hover{
-    border-color: #d0033d6e;
+.cartel:hover{
+    border-style: solid;
+    border-color: #a50130c5;
 }
