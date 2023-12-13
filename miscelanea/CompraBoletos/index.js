@@ -12,10 +12,12 @@ redirection.addEventListener("click", ()=>{
     location.href = "../../index.html"
 });
 
+console.log( localStorage.getItem( 'myData' ) );
+
 selectSeat.addEventListener("click", ()=>{
     if(ticket == 0){
         alert("Lo siento, requieres seleccionar minimo un boleto");
-    } else {
+    } else if( ticket >= 1 ) {
         let temp =  totalTicket + ", "+ cantTicket + ", "+ clasificationName;
         localStorage.setItem('myData', temp);
         location.href = "seleccionAsientos.html";
