@@ -18,3 +18,6 @@ cPaypal.addEventListener("click", ()=>{
 
     window.open(paginaPago, 'GooglePopup', 'width=600,height=800');
 });
+
+
+//localStorage.clear();

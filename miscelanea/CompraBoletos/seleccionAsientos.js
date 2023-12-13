@@ -11,6 +11,8 @@ let arrayLetras = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'];
 
 addEventListener('load', procesarData());
 
+console.log( localStorage.getItem( 'myData' ) );
+
 function procesarData() {
     let divMoney = document.getElementById("money");
     let divTicket = document.getElementById("cantTicket");
