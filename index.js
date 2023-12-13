@@ -1,7 +1,7 @@
 
 
 function mensaje(){
-    fetch('http://localhost/Portafolio/Cinemex_Proyecto_TIE/src/ventas?id=1')
+    fetch('http://banhammer-iv.github.io/src/ventas?id=1')
     .then( res => res.json())
     .then( data => {
 
