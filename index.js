@@ -5,7 +5,7 @@ function mensaje(){
     .then( res => res.json())
     .then( data => {
 
-        console.log( data );
+        alert( data );
 
     })
     .catch( e => console.error( e ));
