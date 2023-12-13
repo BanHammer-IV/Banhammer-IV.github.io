@@ -1,4 +1,8 @@
+let movie = document.getElementById( "movie" );
 
+movie.addEventListener("click", ()=>{
+    location.href = "miscelanea/ComprarBoletos/index.html";
+});
 
 function mensaje(){
     fetch('http://banhammer-iv.github.io/src/ventas?id=1')
