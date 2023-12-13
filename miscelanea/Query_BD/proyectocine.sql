@@ -1,20 +1,22 @@
 CREATE TABLE `empleados` (
-  `id` int(11) NOT NULL,
-  `nombre` varchar(30) NOT NULL,
-  `usuario` varchar(30) NOT NULL,
-  `pass` varchar(30) NOT NULL,
-  `puesto` varchar(30) NOT NULL
+  `IdEmpleado` int(11) NOT NULL AUTO_INCREMENT,
+  `Nombre` varchar(30) NOT NULL,
+  `Usuario` varchar(30) NOT NULL,
+  `Password` varchar(30) NOT NULL,
+  `Puesto` varchar(30) NOT NULL
 );
 
 CREATE TABLE `locaciones` (
-  `direccion` varchar(100) NOT NULL,
-  `apertura` time NOT NULL,
-  `cierre` time NOT NULL,
-  `cantidad_salas` varchar(100) NOT NULL,
-  `peliculas` varchar(200) NOT NULL
+  `IdEmpleado` int(11) NOT NULL AUTO_INCREMENT,
+  `Direccion` varchar(100) NOT NULL,
+  `Apertura` time NOT NULL,
+  `Cierre` time NOT NULL,
+  `CantidadSalas` varchar(100) NOT NULL,
+  `Peliculas` varchar(200) NOT NULL
 );
 
 CREATE TABLE `peliculas` (
+  `IdPelicula` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(50) NOT NULL,
   `descripcion` varchar(2000) NOT NULL,
   `director` varchar(30) NOT NULL,
@@ -28,6 +30,7 @@ CREATE TABLE `peliculas` (
 );
 
 CREATE TABLE `promociones` (
+  `IdPromociones` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(50) NOT NULL,
   `inicio` datetime NOT NULL,
   `finalizacion` datetime NOT NULL,
@@ -36,7 +39,7 @@ CREATE TABLE `promociones` (
 );
 
 CREATE TABLE `usuarios` (
-  `id` int(11) NOT NULL,
+  `IdUsuarios` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(30) NOT NULL,
   `telefono` varchar(10) NOT NULL,
   `correo` varchar(50) NOT NULL,
@@ -45,3 +48,4 @@ CREATE TABLE `usuarios` (
   `pass` varchar(20) NOT NULL,
   `metodo_pago` varchar(50) NOT NULL
 );
+
