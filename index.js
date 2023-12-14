@@ -1,7 +1,7 @@
 let movie = document.getElementById( "movie" );
 
 movie.addEventListener("click", ()=>{
-    location.href = "miscelanea/ComprarBoletos/index.html";
+    location.href = "miscelanea/CompraBoletos/index.html";
 });
 
 function mensaje(){
