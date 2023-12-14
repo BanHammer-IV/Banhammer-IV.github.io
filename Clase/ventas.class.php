@@ -8,7 +8,8 @@
         private $CorreoElectronico = "";
         private $CodigoPostal = "";
         private $NumeroTarjeta = "";
-        private $nombre = "";
+        private $Nombre = "";
+        private $InformacionCompra = "";
 
 
         public function listaVentas( $pagina = 1 ){
@@ -33,7 +34,7 @@
         public function post( $json ){
             $_respuestas = new respuestas;
             $datos = json_decode( $json, true );
-            if( !isset($datos['CorreoElectronico']) || !isset($datos['CodigoPostal']) || !isset($datos['NumeroTarjeta']) || !isset($datos['Nombre']) ){
+            if( !isset($datos['CorreoElectronico']) || !isset($datos['CodigoPostal']) || !isset($datos['NumeroTarjeta']) || !isset($datos['Nombre'] ) || !isset($datos['InformacionCompra'] ) ){
                 return $_respuestas->error_400();
             } else {
                 if( isset( $datos[ 'IdVentas' ] ) ){ $this->IdVentas = $datos[ 'IdVentas' ]; }
@@ -41,6 +42,7 @@
                 $this->CodigoPostal = $datos['CodigoPostal'];
                 $this->NumeroTarjeta = $datos['NumeroTarjeta'];
                 $this->Nombre = $datos['Nombre'];
+                $this->InformacionCompra = $datos['InformacionCompra'];
 
                 $resp = $this->insertarVenta();
                 if( $resp ){
@@ -56,9 +58,9 @@
         }
 
         private function insertarVenta(){
-            $query = "INSERT INTO ". $this->tabla ."(IdVentas, CorreoElectronico, CodigoPostal, NumeroTarjeta, Nombre) 
-                        VALUES ('". $this->IdVentas ."','". $this->CorreoElectronico ."','". $this-> CodigoPostal."','". $this->NumeroTarjeta ."','". $this->Nombre ."')";
-            
+            $query = "INSERT INTO ". $this->tabla ."(IdVentas, CorreoElectronico, CodigoPostal, NumeroTarjeta, Nombre, InformacionCompra) 
+                        VALUES ('". $this->IdVentas ."','". $this->CorreoElectronico ."','". $this-> CodigoPostal."','". $this->NumeroTarjeta ."','". $this->Nombre ."', '". $this->InformacionCompra ."')";
+            print_r( $query );
             $resp = parent::nonQuery( $query );
             if( $resp ){
                 return $resp;
