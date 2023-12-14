@@ -78,8 +78,6 @@ cDebit.addEventListener("click", ()=>{
     cModal.appendChild( inputName );
     cModal.appendChild( inputInfo );
     cModal.appendChild( inputPays );
-    
-    //cModal.appendChild( formDebit );
 });
 
 
