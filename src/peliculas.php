@@ -6,7 +6,7 @@
     $idPeliculas = new peliculas;
 
     if( $_SERVER['REQUEST_METHOD'] == 'GET'){
-        if( isset( $_GET["page"] ) ){
+        if( isset( $_GET['page'] ) ){
             $pagina = $_GET["page"];
             $listaPeliculas = $idPeliculas->listaPeliculas( $pagina );
             header('Content-Type: application/json');

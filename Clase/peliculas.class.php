@@ -16,15 +16,16 @@
         private $idiomas = "";
         private $trailer = "";
 
-        public function listaPeliculas( $pagina = 1 ){
+        public function listaPeliculas( $pagina ){
             $inicio = 0;
             $cantidad = 4;
             if( $pagina > 1 ){
-                $inicio = ( $cantidad * ($pagina - 1 ) ) + 1;
+                $inicio = ( $cantidad * ($pagina - 1 ) );
                 $cantidad = $cantidad * $pagina;
             }
 
-            $query = "SELECT idPelicula, nombre, director FROM ". $this->tabla ." limit $inicio, $cantidad";
+            $query = "SELECT * FROM ". $this->tabla ." limit $inicio, $cantidad";
+            //print_r( $query );
             $datos = parent::obtenerDatos( $query );
 
             return ( $datos );

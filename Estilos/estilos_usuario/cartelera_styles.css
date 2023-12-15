@@ -41,6 +41,12 @@ div{
     margin-top: 7px;
 }
 
+.peliculas:hover{
+    transform: translateY(-3%);
+    transition: all 500ms ease;
+}
+
+
 .header{
     box-shadow: 0 5px 40px -5px;
     display: block;
@@ -54,10 +60,6 @@ div{
     margin-bottom: 18px;
 }
 
-.peliculas:hover{
-    transform: translateY(-3%);
-    transition: all 500ms ease;
-}
 
 .titulo{
     padding-top: 5px;

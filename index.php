@@ -11,6 +11,7 @@ $TagUsuario = $_SESSION['usuario'];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Estilos/Style.css">
     <link rel="stylesheet" href="Estilos/Icon_Style.css">
+    <link rel="stylesheet" href="Estilos/estilos_usuario/cartelera_styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <title>Cinemex</title>
@@ -100,9 +101,6 @@ $TagUsuario = $_SESSION['usuario'];
     <div class="cartelera">
         <div class="specialMovie">
           <div class="container_Special">
-            <div id="movie">
-              <img class="movieSelector" src="images/Poster_Peliculas/Avengers_IW.jpeg">
-            </div>
             <div class="containerCarousel">
               <div id="carouselExampleIndicators" class="carousel slide">
                 <div class="carousel-inner">
@@ -135,11 +133,20 @@ $TagUsuario = $_SESSION['usuario'];
           </div>  
         </div>
         <div class="div_pelis_navbar_style">Funciones</div>
-        <div class="peliculas"></div>
-        <div class="div_pelis_navbar_style">Promociones</div>
-        <div class="promotion">
-            <button onclick="mensaje()"> mostrar</button>
+        <div id="peliculas" class="cartelPeliculas">
+          <!--<div onclick="cambiarPagina( 0 )" class="nextPage">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+            </svg>
+          </div>-->
+          <!--<div onclick="cambiarPagina( 1 )" class="nextPage">
+            <svg xmlns="http://www.w3.org/2000/svg"fill="currentColor" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+            </svg>
+          </div>-->
         </div>
+        <div class="div_pelis_navbar_style">Promociones</div>
+        <div class="promotion"></div>
     </div>
     <footer>
       <!-- CONTACTO -->

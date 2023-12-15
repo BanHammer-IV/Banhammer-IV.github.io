@@ -6,13 +6,38 @@ let numberTicket = document.getElementById("ticketStudent");
 let divMoney =  document.getElementById("money");
 let divTickets = document.getElementById("cantTicket");
 
+
 let ticket = 0;
 let cantTicket, totalTicket, clasificationName;
 redirection.addEventListener("click", ()=>{
     location.href = "../../index.html"
 });
 
-console.log( localStorage.getItem( 'myData' ) );
+
+addEventListener('load', procesarData());
+
+function procesarData() {
+    let idMovie = localStorage.getItem("myMovie");
+    let Nombre = document.getElementById("Nombre")
+    let estreno = document.getElementById("estreno");
+    let horario = document.getElementById("horario");
+    let sala = document.getElementById("sala");
+    let idiomas = document.getElementById("idiomas");
+    let idImage = document.getElementById("imagePoster");
+    console.log( idMovie );
+    fetch('http://localhost/Portafolio/Cinemex_Proyecto_TIE/src/peliculas?id='+idMovie)
+    .then( res => res.json())
+    .then( data => {
+        Nombre.innerHTML = "<strong>"+ data[0].nombre + "</strong>";
+        estreno.innerHTML = "estreno: "+ data[0].estreno + "</strong>";
+        horario.innerHTML = "horario: "+ data[0].horario + "</strong>";
+        sala.innerHTML = "sala: "+ data[0].salas + "</strong>";
+        idiomas.innerHTML = "idiomas: "+ data[0].idiomas + "</strong>";
+        idImage.setAttribute("src", data[0].imagenPoster)
+    })
+    .catch( e => console.error( e ));
+}
+
 
 selectSeat.addEventListener("click", ()=>{
     if(ticket == 0){

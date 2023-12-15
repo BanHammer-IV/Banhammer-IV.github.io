@@ -11,8 +11,6 @@ let arrayLetras = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'];
 
 addEventListener('load', procesarData());
 
-console.log( localStorage.getItem( 'myData' ) );
-
 function procesarData() {
     let divMoney = document.getElementById("money");
     let divTicket = document.getElementById("cantTicket");
@@ -23,6 +21,29 @@ function procesarData() {
     let tipoTicket = arrayData[ 2 ];
     divTicket.innerHTML = tipoTicket + ": " + ticket;
     divMoney.innerHTML = "Total a pagar: $" + dinero + ".00";
+}
+
+addEventListener('load', procesarDataMovie());
+
+function procesarDataMovie() {
+    let idMovie = localStorage.getItem("myMovie");
+    let Nombre = document.getElementById("Nombre")
+    let estreno = document.getElementById("estreno");
+    let horario = document.getElementById("horario");
+    let sala = document.getElementById("sala");
+    let idiomas = document.getElementById("idiomas");
+    let idImage = document.getElementById("imagePoster");
+    fetch('http://localhost/Portafolio/Cinemex_Proyecto_TIE/src/peliculas?id='+idMovie)
+    .then( res => res.json())
+    .then( data => {
+        Nombre.innerHTML = "<strong>"+ data[0].nombre +"</strong>";
+        estreno.innerHTML = "estreno: "+ data[0].estreno + "</strong>";
+        horario.innerHTML = "horario: "+ data[0].horario + "</strong>";
+        sala.innerHTML = "sala: "+ data[0].salas + "</strong>";
+        idiomas.innerHTML = "idiomas: "+ data[0].idiomas + "</strong>";
+        idImage.setAttribute("src", data[0].imagenPoster)
+    })
+    .catch( e => console.error( e ));
 }
 
 for(i = 0; i < 10; i++){
@@ -93,16 +114,13 @@ function changeColor( imgPro, typeChange ) {
 
 btnChange.addEventListener("click", ()=>{
     var paginaPago = 'pagar.html';
-
-    console.log( arraySelectedSeat );
-    console.log( arraySelectedSeat.length );
-    console.log( parseInt( ticket ) );
     if( arraySelectedSeat.length == 0 ){
         alert("Necesitas seleccionar tus asientos");
     } else if( arraySelectedSeat.length >= 1 && arraySelectedSeat.length < parseInt( ticket ) ){
         alert("Hacen falta asientos por seleccionar");
     } else {
         
-        window.open(paginaPago, 'GooglePopup', 'width=600,height=800');
+        localStorage.setItem("myDataSec", arraySelectedSeat);
+        location.href = "pagar.html";
     }
 });

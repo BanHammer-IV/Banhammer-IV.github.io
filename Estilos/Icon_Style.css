@@ -83,3 +83,39 @@
 .pago:hover{
     color:rgb(21, 36, 165);
 }
+
+.cartelPeliculas{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.peliculas{
+    border-radius: 10px;
+    width: 243px;
+    height: 366px;
+    margin-top: 7px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.peliculas:hover{
+    transform: translateY(-3%);
+    transition: 500ms ease;
+}
+
+.nextPage{
+    width: 5%;
+}
+
+.nextPage:hover{
+    color:#d0033d;
+}

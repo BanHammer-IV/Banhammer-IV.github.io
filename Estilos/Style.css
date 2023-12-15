@@ -1,12 +1,27 @@
 *{
-    font-family: "Lato", sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0px;
     padding: 0px;
 }
 
+.nombre_usuario{
+    margin-top: 15px;
+    float: left;
+}
+
+.close_input{
+    border: none;
+    margin-left: 17px;
+}
+
+.link_header{
+    text-decoration: none;
+    color: #000000;
+}
+
 .cartelera{
+    margin: 10%;
     margin-left: 1.5%;
-    margin-top: 10%;
     width: 97%;
     height: 1200px;
     display: flex;
@@ -27,7 +42,7 @@
 
 .nav_bar{
     margin: 20px;
-    background-color: #a0a0a0ad;
+    background-color: #9EC8B9;
     width: 97%;
     height: 80px;
     display: flex;
@@ -44,6 +59,19 @@
     text-align: center;
     transition: top 0.3s; /* Add smooth transition effect */
     z-index: 99999;
+    box-shadow: 0 5px 40px -5px;;
+}
+
+.div_pelis_navbar_style{
+    margin: 20px;
+    background-color: #9EC8B9;
+    width: 97%;
+    height: 80px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 312%;
 }
 
 .leftSide{
@@ -63,11 +91,12 @@
     justify-content: flex-end;
     align-items: center;
     align-content: stretch;
-    width: 20%;
+    gap: 10px;
+    margin-right: 2%;
 }
 
 .promocion:hover{
-    background-color: #7979795b;
+    background-color: #9EC8B9;
 }
 
 .container_Special{
@@ -202,11 +231,15 @@ footer{
     justify-content: space-around;
     align-items: center;
     gap: 100px;
-    position: absolute;
 }
 
-.movieSelector{
+.movie{
     width: 250px;
     height: 300px;
+    margin-right: 5%;
+    border-radius: 10px;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}

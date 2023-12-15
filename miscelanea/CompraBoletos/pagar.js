@@ -20,6 +20,20 @@
     let inputInfo = document.createElement( "div" );
     let inputPays = document.createElement( "Button" );
 
+addEventListener('load', procesarDataMovie());
+
+
+let Nombre;
+function procesarDataMovie() {
+    let idMovie = localStorage.getItem("myMovie");
+    fetch('http://localhost/Portafolio/Cinemex_Proyecto_TIE/src/peliculas?id='+idMovie)
+    .then( res => res.json())
+    .then( data => {
+        Nombre = data[0].nombre;
+    })
+    .catch( e => console.error( e ));
+}
+
 cDebit.addEventListener("click", ()=>{
     //Crear el esqueleto de Form
         formDebit.setAttribute("method", "POST");
@@ -63,7 +77,7 @@ cDebit.addEventListener("click", ()=>{
     //Crear el inputInfo
         inputInfo.setAttribute("id", "InfoCompra");
         inputInfo.setAttribute("class", "divInfoCompra");
-        inputInfo.innerHTML = localStorage.getItem( 'myData' );
+        inputInfo.innerHTML = Nombre + "<br>" +localStorage.getItem( 'myData' ) + " <br> " +localStorage.getItem('myDataSec');
     //Crear el inputPays 
         inputPays.innerHTML = " PAGAR"
         inputPays.setAttribute("id", "Comprar");
